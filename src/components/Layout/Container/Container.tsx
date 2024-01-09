@@ -9,8 +9,7 @@ export type ContainerProps = {
 
 export const Container = ({children}:ContainerProps) => {
 
-    const [opened, setOpened] = useState(true); 
-    console.log(opened)
+    const [opened, setOpened] = useState(false); 
     return <>
         <Header setOpened={setOpened}/>
         <NavBar opened={opened}/>
